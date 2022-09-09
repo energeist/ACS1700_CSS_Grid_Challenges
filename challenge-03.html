@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 
+     This example used named areas to place elements 
+     on the grid 
+   -->
+  
+  <h1>Example</h1>
+  
+  <!-- Grid Container -->
+  <div class="container">
+  
+    <div class="box a"></div>
+    <div class="box b"></div>
+    <div class="box c"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+    
+    <div class="box d"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+    
+    <div class="box e"></div>
+  
+  </div>
+  
+  
+  <style>
+    /* Your styles here */
+  
+    .container {
+      /* display grid */
+      display: grid;
+  
+      /* Define template columns */
+      grid-template-columns: 1fr 1fr 1fr;
+  
+      /* Define a gap */
+      grid-gap: 1rem;
+  
+      /* Define grid template areas */
+      grid-template-areas:
+      "h h h"
+      "s m m"
+      "s n n"
+      "f f f";
+    }
+  
+    /* Assign each of the boxes below to a grid area */
+  
+    .a {
+      grid-area: h;
+      background-color: #d45353;
+    }
+  
+    .b {
+      grid-area: s;
+      background-color: #eae55e;
+    }
+  
+    .c {
+      grid-area: m;
+      background-color: #65d451;
+    }
+  
+    .d {
+      grid-area: n;
+      background-color: #86b9f5;
+    }
+  
+    .e {
+      grid-area: f;
+      background-color: #cf86f5;
+    }
+  
+    .box {
+      min-height: 100px;
+    }
+  </style>
+
+</body>
+</html>
